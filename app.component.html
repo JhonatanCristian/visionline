@@ -1,0 +1,33 @@
+<div *ngIf="undefined === restItems">Loading...</div>
+<div *ngIf="undefined !== restItems">
+  <div class="col-4">
+   
+    <ul>
+      <img src="https://raw.githubusercontent.com/b2w-marketplace/code-challenge/master/files/avatar-dev.png">
+      <h1> {{restItems.profile.name}}</h1>
+        <p>{{restItems.profile.profession}}</p>
+       <br /> <hr /> <br />
+      <h2>PROFILE</h2>
+      <hr class="col-3">
+
+      <p>{{restItems.profile.description}}</p>
+      <br />
+      <h2 >CONTACT</h2>
+      <hr class="col-3">
+      <p>{{restItems.profile.contact.tel}}</p>
+      <p>{{restItems.profile.contact.cel}}</p>
+      <br>
+      <p>{{restItems.profile.contact.address}}</p>
+      <br>
+      <p>{{restItems.profile.contact.website}}</p>
+      <p>{{restItems.profile.contact.mail}}</p>
+      <br>
+      <h2>SKILLS</h2>
+      <hr class="col-3">
+      <p>{{restItems.profile.skills.name}}</p>
+    </ul>
+  </div>
+  </div>
+
+
+
